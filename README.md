@@ -7,6 +7,7 @@ This is a tooling websites.Intergrated lots of tools.Have fun ^_^.oO0!
 ### 💻 Application - web client
   - [x] Initial web repo and file structrue
   - [x] Install pkgs for client side
+  - [ ] Dark mode set up.
   - [ ] Initial dashboard layout 
   - [ ] Navbar and Sider components 
   - [ ] User auth Login and Registeration

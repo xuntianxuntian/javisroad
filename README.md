@@ -1,9 +1,9 @@
 # Javy's Road -- Road to release new lives!
 
-This is a tooling websites.Intergrated lots of tools.Have fun ^_^.oO0!
+This is a tooling websites.Intergrated lots of tools.Have fun ^_^.o0O!
 
 ## 📅 Todo List
----
+
 ### 💻 Application - web client
   - [x] Initial web repo and file structrue
   - [x] Install pkgs for client side

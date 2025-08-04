@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import AppSidebar from "@/components/AppSidebar";
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import AppNavbar from "@/components/AppNavbar";
 
 const geistSans = Geist({
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex bg-red-300`}
       >
         <ThemeProvider
             attribute="class"
@@ -36,13 +37,18 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-              <AppSidebar />
-              <div className="w-full">
-                <AppNavbar />
-                <div className="px-4">
-                  {children}
+              <SidebarProvider >
+                <AppSidebar />
+                <div className="w-full bg-yellow-200 flex flex-col h-full">
+                  <div className="flex gap-2 items-center">
+                    <SidebarTrigger className="flex-none bg-cyan-900" />
+                    <AppNavbar />
+                  </div>
+                  <div className="flex-grow px-4 bg-green-300">
+                    {children}
+                  </div>
                 </div>
-              </div>
+              </SidebarProvider>
           </ThemeProvider>
       </body>
     </html>

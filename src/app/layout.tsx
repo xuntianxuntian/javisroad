@@ -41,7 +41,7 @@ export default function RootLayout({
                 <AppSidebar />
                 <div className="w-full bg-yellow-200 flex flex-col h-full">
                   <div className="flex gap-2 items-center">
-                    <SidebarTrigger className="flex-none bg-cyan-900" />
+                    <SidebarTrigger className="hidden sm:flex flex-none bg-cyan-900" />
                     <AppNavbar />
                   </div>
                   <div className="flex-grow px-4 bg-green-300">
